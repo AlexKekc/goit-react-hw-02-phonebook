@@ -1,0 +1,26 @@
+export const theme = Object.freeze({
+  colors: {
+    white: '#ffffff',
+    black: '#010101',
+    green: '#4caf50',
+    red: '#f44336',
+    blue: '#2196f3',
+    skyBlue: '#14cbd8',
+    gray: '#757575',
+    lightGray: '#d3d3d3',
+    primaryText: '#212121',
+    secondaryText: '#757575',
+  },
+  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+  fonts: {
+    body: 'system-ui, sans-serif',
+    heading: 'system-ui, sans-serif',
+    monospace: 'Menlo, monospace',
+  },
+  fontSizes: { xs: '12px', s: '14px', m: '20px', l: '32px', xl: '64px' },
+  fontWeights: { normal: 400, bold: 700 },
+  lineHeights: { body: 1.5, heading: 1.125 },
+  borders: { none: 'none', normal: '1px solid' },
+  radii: { none: 0, normal: '4px', big: '8px', round: '50%' },
+  shadows: { boxShadow: '0px 5px 5px rgba(0, 0, 0, 0.1)' },
+});
