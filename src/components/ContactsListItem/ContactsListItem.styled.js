@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
 
 export const ContactItem = styled.li`
-  width: 350px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 350px;
+
   margin-top: ${p => p.theme.space[3]}px;
 `;
 
@@ -14,7 +16,6 @@ export const ContactData = styled.span`
 `;
 
 export const DeleteButton = styled.button`
-  text-align: center;
   padding-top: ${p => p.theme.space[1]}px;
   padding-bottom: ${p => p.theme.space[1]}px;
   padding-left: ${p => p.theme.space[2]}px;
@@ -25,6 +26,7 @@ export const DeleteButton = styled.button`
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.1),
     2px 2px 2px rgba(0, 0, 0, 0.3);
 
+  text-align: center;
   font-family: ${p => p.theme.fonts.monospace};
   font-size: ${p => p.theme.fontSizes.xs};
   font-weight: ${p => p.theme.fontWeights.semiBold};
