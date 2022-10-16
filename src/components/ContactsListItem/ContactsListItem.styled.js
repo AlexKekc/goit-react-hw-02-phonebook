@@ -1,28 +1,40 @@
 import styled from '@emotion/styled';
 
 export const ContactItem = styled.li`
+  width: 350px;
   display: flex;
   align-items: center;
-  padding-top: ${p => p.theme.space[3]}px;
-  padding-bottom: ${p => p.theme.space[3]}px;
-  padding-left: ${p => p.theme.space[4]}px;
-  padding-right: ${p => p.theme.space[4]}px;
-  border-radius: ${p => p.theme.radii.big};
-  background-color: ${p => p.theme.colors.white};
-  list-style: georgian;
-
-  & + li {
-    margin-top: ${p => p.theme.space[3]}px;
-  }
+  justify-content: space-between;
+  margin-top: ${p => p.theme.space[3]}px;
 `;
 
 export const ContactData = styled.span`
-  border-radius: ${p => p.theme.radii.round};
+  font-size: ${p => p.theme.fontSizes.m};
+  font-weight: ${p => p.theme.fontWeights.normal};
 `;
 
-export const DeleteBtn = styled.button`
-  width: 80px;
-  margin-left: ${p => p.theme.space[4]}px;
-  font-size: ${p => p.theme.fontSizes.m};
-  font-weight: ${p => p.theme.fontWeights.bold};
+export const DeleteButton = styled.button`
+  text-align: center;
+  padding-top: ${p => p.theme.space[1]}px;
+  padding-bottom: ${p => p.theme.space[1]}px;
+  padding-left: ${p => p.theme.space[2]}px;
+  padding-right: ${p => p.theme.space[2]}px;
+
+  border: ${p => p.theme.borders.normal};
+  border-radius: ${p => p.theme.radii.normal};
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.1),
+    2px 2px 2px rgba(0, 0, 0, 0.3);
+
+  font-family: ${p => p.theme.fonts.monospace};
+  font-size: ${p => p.theme.fontSizes.xs};
+  font-weight: ${p => p.theme.fontWeights.semiBold};
+
+  color: ${p => p.theme.colors.primaryText};
+  cursor: pointer;
+
+  :hover,
+  :focus {
+    background-color: ${p => p.theme.colors.red};
+    color: ${p => p.theme.colors.white};
+  }
 `;
