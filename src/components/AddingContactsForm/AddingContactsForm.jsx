@@ -30,7 +30,7 @@ export class AddingContactsForm extends Component {
   render() {
     return (
       <ContactsForm onSubmit={this.handleSubmit}>
-        <ContactsLabel>
+        <ContactsLabel htmlFor="name">
           Name
           <ContactsInput
             type="text"
@@ -42,7 +42,7 @@ export class AddingContactsForm extends Component {
             onChange={this.handleInputChange}
           />
         </ContactsLabel>
-        <ContactsLabel>
+        <ContactsLabel htmlFor="number">
           Number
           <ContactsInput
             type="tel"
