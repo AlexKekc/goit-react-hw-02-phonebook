@@ -12,6 +12,8 @@ export const theme = Object.freeze({
     redText: '#f44336',
     primaryText: '#212121',
     secondaryText: '#757575',
+    error: '#f44336',
+    success: '#4caf50',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
