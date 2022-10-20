@@ -1,13 +1,7 @@
-import { Form, Field, ErrorMessage } from 'formik';
 import styled from '@emotion/styled';
 
-export const ContactsForm = styled(Form)`
-  display: inline-flex;
-  flex-direction: column;
-  gap: ${p => p.theme.space[4]}px;
-
+export const ContactsForm = styled.form`
   width: 500px;
-
   margin-top: ${p => p.theme.space[4]}px;
   margin-left: ${p => p.theme.space[4]}px;
 
@@ -28,8 +22,10 @@ export const ContactsLabel = styled.label`
   font-weight: ${p => p.theme.fontWeights.semiBold};
 `;
 
-export const ContactsInput = styled(Field)`
+export const ContactsInput = styled.input`
   display: flex;
+
+  margin-bottom: ${p => p.theme.space[4]}px;
 
   border: ${p => p.theme.borders.bold};
   border-color: ${p => p.theme.colors.transparentGray};
@@ -47,17 +43,7 @@ export const ContactsInput = styled(Field)`
   }
 `;
 
-export const ContactsError = styled(ErrorMessage)`
-  font-size: ${p => p.theme.fontSizes.xs};
-  font-family: ${p => p.theme.fonts.monospace};
-  font-weight: ${p => p.theme.fontWeights.normal};
-
-  color: ${p => p.theme.colors.error};
-`;
-
 export const SubmitButton = styled.button`
-  max-width: 130px;
-
   margin-top: ${p => p.theme.space[4]}px;
 
   padding-top: ${p => p.theme.space[2]}px;
